@@ -14,7 +14,7 @@ class Car {
 
     zeroToSixty(){
         setTimeout(() => {
-            console.log('this is very fast acceleration');
+            console.log(this.name+' have very fast acceleration');
             this.currentSpeed = 60;
             console.log(this.currentSpeed);
         }, 0);
@@ -31,3 +31,17 @@ const ferrari = new Car('ferrari','red',250);
 
 ferrari.zeroToSixty();
 console.log(ferrari.currentSpeed);
+
+const porche = new Car('porche','yellow',230);
+
+porche.zeroToSixty();
+
+
+Array.prototype.myPush = function (fruit) {
+    this[this.length] = fruit;
+    return this;
+}
+
+const fruits = ['banana','berries','apple','pineapple'];
+console.log(fruits.myPush('pumpkin'));
+console.log(fruits.myPush('guava'));
