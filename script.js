@@ -45,3 +45,5 @@ Array.prototype.myPush = function (fruit) {
 const fruits = ['banana','berries','apple','pineapple'];
 console.log(fruits.myPush('pumpkin'));
 console.log(fruits.myPush('guava'));
+
+
